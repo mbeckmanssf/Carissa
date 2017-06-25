@@ -34,5 +34,13 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Styles": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "AppUsers": {
+    "dataSource": "mongo",
+    "public": true
   }
 }

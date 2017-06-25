@@ -1,0 +1,36 @@
+{
+  "name": "AppUsers",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "Hair_Length": {
+      "type": "string",
+      "required": true
+    },
+    "Hair_Weight": {
+      "type": "string",
+      "required": true
+    },
+    "Hair_Type": {
+      "type": "string",
+      "required": true
+    },
+    "Location": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,69 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar text-center>
+    <ion-title>CARISSA STYLES</ion-title>
+    <p>Register</p>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form #registerForm="ngForm" (ngSubmit)="signupForm(registerForm)" novalidate>
+    <ion-item>
+      <ion-label>First Name</ion-label>
+      <ion-input name="firstName" type="string" placeholder="Jane" [(ngModel)]="user.firstName" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Last Name</ion-label>
+      <ion-input name="lastName" type="string" placeholder="Doe" [(ngModel)]="user.lastName"></ion-input>
+    </ion-item>
+
+<ion-item>
+  <ion-label>Hair Length</ion-label>
+  <ion-select [(ngModel)]="user.Hair_Length" name="Hair_Length" type="string">
+    <ion-option value="chin">Chin</ion-option>
+    <ion-option value="shoulder">Shoulder</ion-option>
+    <ion-option value="long">Long</ion-option>
+  </ion-select>
+</ion-item>
+
+<ion-item>
+  <ion-label>Hair Weight</ion-label>
+  <ion-select [(ngModel)]="user.Hair_Weight" name="Hair_Weight" type="string">
+    <ion-option value="fine">Fine</ion-option>
+    <ion-option value="average">Average</ion-option>
+    <ion-option value="thick">Thick</ion-option>
+  </ion-select>
+</ion-item>
+
+<ion-item>
+  <ion-label>Hair Type</ion-label>
+  <ion-select [(ngModel)]="user.Hair_Type" name="Hair_Type" type="string">
+    <ion-option value="straight">Straight</ion-option>
+    <ion-option value="wavy">Wavy</ion-option>
+    <ion-option value="curly">Curly</ion-option>
+  </ion-select>
+</ion-item>
+
+<ion-item>    
+      <ion-label>Email</ion-label>
+      <ion-input name="email" type="email" placeholder="jane@doe.com" [(ngModel)]="user.email" required></ion-input>
+</ion-item>
+
+<ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input name="password" type="password" [(ngModel)]="user.password" required></ion-input>
+    </ion-item>
+    <button ion-button round outline type="submit" class="button-block">
+      Register
+    </button>
+  </form>
+
+</ion-content>
