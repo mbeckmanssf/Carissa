@@ -14,5 +14,7 @@ export class StyleProvider {
   constructor(public http: Http) {
     console.log('Hello StyleProvider Provider');
   }
-
+  getStyle(temp, Hair_Length) {
+    return ("today's style suggestion is");
+  }
 }

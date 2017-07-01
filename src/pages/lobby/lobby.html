@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar text-center>
+  <ion-navbar text-center color="secondary">
     <ion-title>CARISSA STYLES</ion-title>
     <ion-buttons end side="primary">
       <button ion-button icon-only (click)="logout()">
@@ -19,22 +19,20 @@
 
 
 <ion-content padding>
-  <p>Welcome, {{this.firstName}}</p>
-<ion-card>
-  <ion-card-header>
-    Weather
-  </ion-card-header>
-  <ion-card-content>
-    (placeholder for weather)
-  </ion-card-content>
-</ion-card>
+  <div align="center">
+  <ion-datetime start displayFormat="MM/DD/YYYY" [(ngModel)]="today"></ion-datetime>
+  <p [(ngModel)]="displayTemp" ngDefaultControl>
+    {{displayTemp}}
+  </p>
+  <p [(ngModel)]="weather" ngDefaultControl>
+    {{weather}}
+  </p>
 
-<ion-card>
-  <ion-card-header>
-    Style
-  </ion-card-header>
-  <ion-card-content>
-    (placeholder for style)
-  </ion-card-content>
-</ion-card>
+<button ion-button round outline (click)="toStyle()">
+    Style Me
+  </button>
+<p>
+   I'm awesome! <a href="tel:5555555555">Call me!</a>
+  </p>
+  </div>
 </ion-content>

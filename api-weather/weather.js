@@ -8,7 +8,8 @@ function(err, res){
     var data = JSON.parse(res.body);
     temp = (data.current_observation.temp_f + " F");
     weather = (data.current_observation.weather);
-    console.log(data.current_observation.observation_time);
+    console.log(data);
+    console.log(data.current_observation.feels_like_f);
     console.log(data.current_observation.weather);
     console.log(data.current_observation.temp_f + " F");
 })

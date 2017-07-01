@@ -9,10 +9,12 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LandingPage } from '../pages/landing/landing';
 import { LobbyPage } from '../pages/lobby/lobby';
+import { StylePage } from '../pages/style/style';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { AppUserProvider } from '../providers/app-user/app-user';
 import { StyleProvider } from '../providers/style/style';
+import { WeatherProvider } from '../providers/weather/weather';
 
 let injections: any[] = [
   MyApp,
@@ -20,7 +22,8 @@ let injections: any[] = [
   LandingPage,
   LobbyPage,
   LoginPage,
-  RegisterPage
+  RegisterPage,
+  StylePage
   ] 
 
 @NgModule({
@@ -37,7 +40,8 @@ let injections: any[] = [
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AppUserProvider,
-    StyleProvider
+    StyleProvider,
+    WeatherProvider
   ]
 })
 export class AppModule {}

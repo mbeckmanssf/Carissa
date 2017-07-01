@@ -1,0 +1,57 @@
+[
+{
+  "Name": "Troll",
+  "Description": "Separate top section of hair. Secure at top of head with elastic band.",
+  "Hair_Length": ["chin", "shoulder"],
+  "Hair_Weight": ["all"],
+  "Hair_Type": ["curly"],
+  "Weather": "dry",
+  "Day": "Weekend",
+  "Link": "string",
+  "id": "string"
+},
+{
+  "Name": "Space Princess",
+  "Description": "Part Hair in center and separate.  Gather hair above ear and secure with elastic band.",
+  "Hair_Length": ["chin", "shoulder"],
+  "Hair_Weight": "all",
+  "Hair_Type": "curly",
+  "Weather": "all",
+  "Day": "Weekend",
+  "Link": "string",
+  "id": "string"
+},
+{
+  "Name": "Bun",
+  "Description": "Brush hair to top of head and gather in elastic band.  Twist hair and wrap around elastic.  Secure with second elastic.",
+  "Hair_Length": "shoulder, long",
+  "Hair_Weight": "all",
+  "Hair_Type": "all",
+  "Weather": "all",
+  "Day": "Weekend",
+  "Link": "string",
+  "id": "string"
+},
+{
+  "Name": "Schoolgirl Barrettes",
+  "Description": "Separate front section of hair and split at part (middle or side).  Smooth sections with brush and secure to head with barrettes.",
+  "Hair_Length": "all",
+  "Hair_Weight": "all",
+  "Hair_Type": "straight, wavy",
+  "Weather": "all",
+  "Day": "Weekend",
+  "Link": "string",
+  "id": "string"
+},
+{
+  "Name": "Ponytail",
+  "Description": "Brush hair to base of neck and gather in elastic band.",
+  "Hair_Length": "shoulder, long",
+  "Hair_Weight": "all",
+  "Hair_Type": "all",
+  "Weather": "all",
+  "Day": "Weekend",
+  "Link": "string",
+  "id": "string"
+}
+]

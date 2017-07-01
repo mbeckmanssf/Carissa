@@ -28,6 +28,10 @@ export class AppUserProvider {
       loginUserData
     );
   }
+  getUserData(token) {
+    return this.http.get(
+      this.baseUrl + "/AppUsers" + "?filter[where][id]=" + token + "&access_token=" + token)
+  }
   logout(token) {
     return this.http.post(
       this.baseUrl + this.path + '/logout' + '?access_token=' + token, 
