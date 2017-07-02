@@ -19,15 +19,16 @@
 
 
 <ion-content padding>
+  <h1>Today's Style</h1>
 <ion-card>
   <ion-card-header>
-    Style
+    {{styleToday.Name}}
   </ion-card-header>
-  <ion-card-content [(ngModel)]="Hair_Length" ngDefaultControl>
-    (placeholder for style) {{Hair_Length}}
+  <ion-card-content >
+    {{styleToday.Description}}
   </ion-card-content>
 </ion-card>
-<p>
+<p text-center>
    I'm awesome! <a href="tel:5555555555">Call me!</a>
   </p>
 </ion-content>

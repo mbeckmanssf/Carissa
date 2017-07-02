@@ -34,7 +34,7 @@ export class RegisterPage {
       .map(res => res.json())
     .subscribe(res => {
       window.localStorage.setItem('token', res.token);
-      window.localStorage.setItem('firstName', res.firstName);
+      window.localStorage.setItem('userId', res.id);
       this.navCtrl.setRoot(LobbyPage);
     }, error => {
       if(error === 404){

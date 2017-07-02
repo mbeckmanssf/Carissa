@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { WeatherProvider } from '../../providers/weather/weather'
+
 import { LoginPage } from '../login/login'
 import { RegisterPage } from '../register/register'
 
@@ -16,12 +18,38 @@ import { RegisterPage } from '../register/register'
   templateUrl: 'landing.html',
 })
 export class LandingPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  data: any;
+  weather: any;
+  displayTemp: any;
+  temp: any;
+  constructor(public navCtrl: NavController, 
+  public navParams: NavParams, 
+  public weatherProv: WeatherProvider) {
+    weatherProv.getWeather()
+    .map(res => res.json())
+    .subscribe(res => {
+      this.data = res
+      console.log(this.data.current_observation.weather);
+      console.log(this.data.current_observation.temperature_string);
+      console.log(this.data.current_observation.feelslike_f);
+      window.localStorage.setItem('weather', this.data.current_observation.weather);
+      window.localStorage.setItem('displayTemp', this.data.current_observation.temperature_string);
+      window.localStorage.setItem('temp', this.data.current_observation.feelslike_f);
+      this.temp = this.data.current_observation.feelslike_f;
+    }, error => {
+          return alert("An error has ocurred, please try again.");
+        })
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LandingPage');
+    if(this.temp > 70){
+      return window.localStorage.setItem("weatherTemp", "hot");
+    } else if(this.temp < 50){
+      return window.localStorage.setItem("weatherTemp", "cold");
+    } else{
+      return window.localStorage.setItem("weatherTemp", "average");
+    }
   }
   login() {
     this.navCtrl.push(LoginPage);

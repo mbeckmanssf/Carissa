@@ -35,7 +35,9 @@ export class LoginPage {
     this.appUser.login(this.user)
     .map(res => res.json())
     .subscribe(res => {
+      console.log(res);
       window.localStorage.setItem('token', res.id);
+      window.localStorage.setItem('userId', res.userId);
         this.navCtrl.setRoot(LobbyPage);
     }, error => {
         // inform the user of any known problems that arose, otherwise give a generic failed message

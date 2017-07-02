@@ -10,6 +10,8 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class AppUserProvider {
+  token: any;
+  userId: any;
   baseUrl: string = "https://sum-17-final-phortonssf.c9users.io/api";
   path: string = "/AppUsers";
   loginPath: string = "/login";
@@ -29,8 +31,10 @@ export class AppUserProvider {
     );
   }
   getUserData(token) {
+    this.userId = window.localStorage.getItem("userId");
+    console.log(this.baseUrl + this.path + "?filter[where][id]=" + this.userId + "&access_token=" + token);
     return this.http.get(
-      this.baseUrl + "/AppUsers" + "?filter[where][id]=" + token + "&access_token=" + token)
+      this.baseUrl + this.path + "/" + this.userId + "?access_token=" + token)
   }
   logout(token) {
     return this.http.post(
