@@ -1,0 +1,93 @@
+[
+{
+  "Name": "Troll",
+  "Description": "Separate top section of hair. Secure at top of head with elastic band.",
+  "hairLength": "chin",
+  "hairWeight": "all",
+  "hairType": "curly",
+  "Weather": "average",
+  "Day": "Weekend",
+  "Link": "string"
+},
+{
+  "Name": "Pig Tails",
+  "Description": "Part hair down the middle and separate into two sections.  Braid each section and secure with elastic.",
+  "hairLength": "shoulder",
+  "hairWeight": "all",
+  "hairType": "all",
+  "Weather": "average",
+  "Day": "Weekend",
+  "Link": "string"
+},
+{
+  "Name": "Modern Hippie",
+  "Description": "Part hair down the middle.",
+  "hairLength": "long",
+  "hairWeight": "all",
+  "hairType": "all",
+  "Weather": "average",
+  "Day": "Weekend",
+  "Link": "string"
+},
+{
+  "Name": "Schoolgirl Barrettes",
+  "Description": "Separate front section of hair and split at part (middle or side).  Smooth sections with brush and secure to head with barrettes.",
+  "hairLength": "chin",
+  "hairWeight": "all",
+  "hairType": "straight, wavy",
+  "Weather": "cold",
+  "Day": "Weekend",
+  "Link": "string"
+},
+{
+  "Name": "Center Sleek",
+  "Description": "Part hair down the middle.  Straighten with flat iron.",
+  "hairLength": "shoulder",
+  "hairWeight": "all",
+  "hairType": "all",
+  "Weather": "cold",
+  "Day": "Weekend",
+  "Link": "string"
+},
+{
+  "Name": "Space Princess",
+  "Description": "Part Hair in center and separate.  Gather hair above ear and secure with elastic band.  Twist each section of hair around base and secure with another eleastic",
+  "hairLength": "long",
+  "hairWeight": "all",
+  "hairType": "curly",
+  "Weather": "cold",
+  "Day": "Weekend",
+  "Link": "string"
+},
+{
+  "Name": "Headband",
+  "Description": "Part hair to the side and secure in place with headband.",
+  "hairLength": "chin",
+  "hairWeight": "all",
+  "hairType": "all",
+  "Weather": "hot",
+  "Day": "Weekend",
+  "Link": "string"
+},
+{
+  "Name": "Ponytail",
+  "Description": "Brush hair to base of neck and gather in elastic band.",
+  "hairLength": "shoulder",
+  "hairWeight": "all",
+  "hairType": "all",
+  "Weather": "hot",
+  "Day": "Weekend",
+  "Link": "string"
+},
+{
+  "Name": "Bun",
+  "Description": "Brush hair to top of head and gather in elastic band.  Twist hair and wrap around elastic.  Secure with second elastic.",
+  "hairLength": "long",
+  "hairWeight": "all",
+  "hairType": "all",
+  "Weather": "hot",
+  "Day": "Weekend",
+  "Link": "string"
+}
+]
+ 

@@ -13,15 +13,15 @@
     "lastName": {
       "type": "string"
     },
-    "Hair_Length": {
+    "hairLength": {
       "type": "string",
       "required": true
     },
-    "Hair_Weight": {
+    "hairWeight": {
       "type": "string",
       "required": true
     },
-    "Hair_Type": {
+    "hairType": {
       "type": "string",
       "required": true
     },

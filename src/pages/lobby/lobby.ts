@@ -38,8 +38,8 @@ export class LobbyPage {
     .subscribe(res => {
       this.user = res;
       console.log(this.user);
-      console.log(this.user.Hair_Length);
-      window.localStorage.setItem('Hair_Length', this.user.Hair_Length);
+      console.log(this.user.hairLength);
+      window.localStorage.setItem('hairLength', this.user.hairLength);
     }, error => {
       alert("Sorry, your information could not be retreived.  Please tray again later.");
     });

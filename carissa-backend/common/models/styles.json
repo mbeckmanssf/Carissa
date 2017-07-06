@@ -14,13 +14,13 @@
       "type": "string",
       "required": true
     },
-    "Hair_Length": {
+    "hairLength": {
       "type": "string"
     },
-    "Hair_Weight": {
+    "hairWeight": {
       "type": "string"
     },
-    "Hair_Type": {
+    "hairType": {
       "type": "string"
     },
     "Weather": {

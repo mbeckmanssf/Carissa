@@ -10,11 +10,17 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class StyleProvider {
-
+  token: any = {};
+  baseUrl: string = "https://sum-17-final-phortonssf.c9users.io/api";
+  path: string = "/Styles";
   constructor(public http: Http) {
     console.log('Hello StyleProvider Provider');
   }
-  getStyle(temp, Hair_Length) {
+  getStyles(token) {
+    return this.http.get(
+      this.baseUrl + this.path + "?access_token=" + token);
+    }
+  getStyleToday(temp, hairLength) {
     return ("today's style suggestion is");
   }
 }
