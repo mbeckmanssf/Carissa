@@ -20,7 +20,10 @@ export class StyleProvider {
     return this.http.get(
       this.baseUrl + this.path + "?access_token=" + token);
     }
-  getStyleToday(temp, hairLength) {
-    return ("today's style suggestion is");
+  getStyleToday(temp, hairLength, token) {
+    return this.http.get(
+      this.baseUrl + this.path + "?filter[where][and][0][Weather]=" + temp + 
+      "&filter[where][and][1][hairLength]=" + hairLength + 
+      "&access_token=" + token);
   }
 }

@@ -5,9 +5,11 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
+<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
   <ion-navbar text-center color="secondary">
-    <ion-title>CARISSA STYLES</ion-title>
+   <ion-title style="font-family: 'Tangerine', bold;">
+      <font size="7">Carissa Styles</font>
+    </ion-title>
     <ion-buttons end side="primary">
       <button ion-button icon-only (click)="logout()">
         <ion-icon name="log-out"></ion-icon>
@@ -21,12 +23,12 @@
 <ion-content padding>
   <div align="center">
   <ion-datetime start displayFormat="MM/DD/YYYY" [(ngModel)]="today"></ion-datetime>
-  <p [(ngModel)]="displayTemp" ngDefaultControl>
+  <ion-item [(ngModel)]="displayTemp" ngDefaultControl center-text>
     {{displayTemp}}
-  </p>
-  <p [(ngModel)]="weather" ngDefaultControl>
+  </ion-item>
+  <ion-item [(ngModel)]="weather" ngDefaultControl center-text>
     {{weather}}
-  </p>
+  </ion-item>
 
 <button ion-button round outline (click)="toStyle()">
     Today's Style

@@ -36,6 +36,16 @@ export class LandingPage {
       window.localStorage.setItem('displayTemp', this.data.current_observation.temperature_string);
       window.localStorage.setItem('temp', this.data.current_observation.feelslike_f);
       this.temp = this.data.current_observation.feelslike_f;
+      if(this.temp > 70){
+        window.localStorage.setItem("weatherTemp", "hot");
+        return console.log(window.localStorage.getItem("weatherTemp"));
+      } else if(this.temp < 50){
+        window.localStorage.setItem("weatherTemp", "cold");
+        return console.log(window.localStorage.getItem("weatherTemp"));
+      } else{
+        window.localStorage.setItem("weatherTemp", "average");
+        return console.log(window.localStorage.getItem("weatherTemp"));
+      };
     }, error => {
           return alert("An error has ocurred, please try again.");
         })
@@ -43,14 +53,9 @@ export class LandingPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LandingPage');
-    if(this.temp > 70){
-      return window.localStorage.setItem("weatherTemp", "hot");
-    } else if(this.temp < 50){
-      return window.localStorage.setItem("weatherTemp", "cold");
-    } else{
-      return window.localStorage.setItem("weatherTemp", "average");
-    }
+    
   }
+  
   login() {
     this.navCtrl.push(LoginPage);
   }

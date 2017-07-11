@@ -32,7 +32,6 @@ export class AppUserProvider {
   }
   getUserData(token) {
     this.userId = window.localStorage.getItem("userId");
-    console.log(this.baseUrl + this.path + "?filter[where][id]=" + this.userId + "&access_token=" + token);
     return this.http.get(
       this.baseUrl + this.path + "/" + this.userId + "?access_token=" + token)
   }

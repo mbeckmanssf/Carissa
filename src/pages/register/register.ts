@@ -31,7 +31,7 @@ export class RegisterPage {
       return alert("Please fill in all of the required fields.");
     }
     this.appUser.register(this.user)
-      .map(res => res.json())
+    .map(res => res.json())
     .subscribe(res => {
       window.localStorage.setItem('token', res.token);
       window.localStorage.setItem('userId', res.id);
